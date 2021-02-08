@@ -42,3 +42,13 @@ iptables -t nat -A PREROUTING -p tcp --dport 8080 -j DNAT --to-destination 192.1
 iptables -A FORWARD -p tcp --dport 8080 -m state --state NEW,ESTABLISHED,RELATED
 
 iptables -P INPUT DROP
+
+
+#6* Настроить OpenVPN, связать несколько виртуальных машин с помощью OpenVPN-туннеля. 
+
+#in development
+
+#7* Сделать одну из настроенных в задании выше машин шлюзом доступа в интернет. Настроить NAT.
+
+#in development
+
